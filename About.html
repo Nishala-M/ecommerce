@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - QuickCart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <nav class="navbar navbar-expand-lg  ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">QuickCart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Product.html">Product</a></li>
+          <li class="nav-item"><a class="nav-link" href="Cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link active" href="About.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container py-5">
+    <div class="text-center mb-4" >
+      <h1 class="fw-bold">About QuickCart</h1><br/>
+      <p class="lead">QuickCart is your trusted online shopping partner.
+We bring together a wide variety of products — from electronics to fashion — with the aim of making shopping simple, affordable, and enjoyable for everyone.
+Our platform is designed to provide a seamless shopping experience, ensuring that you can find exactly what you need in just a few clicks.
+We prioritize quality, offering products from trusted brands to ensure that every purchase meets your expectations.
+With our fast and reliable delivery services, your orders reach you quickly and safely, so you can enjoy your purchases without any hassle.
+At QuickCart, customer satisfaction is our top priority. Our dedicated support team is always ready to assist you, making sure your shopping experience is smooth and worry-free.
+We also offer regular deals, discounts, and exclusive offers, helping you save while shopping for the products you love.
+Whether you’re looking for the latest gadgets, trendy fashion, or popular books, QuickCart brings everything to your fingertips — making online shopping easier, smarter, and more enjoyable.</p>
+    </div>
+  </section>
+  <section class=" py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" >Get in Touch</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div id="successMessage" class="alert alert-success d-none text-center">
+            ✅ Message Sent Successfully!
+          </div>
+
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message" required></textarea>
+            </div>
+            <button type="submit" class="btn-1  " >Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 QuickCart. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      document.getElementById("successMessage").classList.remove("d-none"); 
+      document.getElementById("contactForm").reset(); 
+    });
+  </script>
+</body>
+
+</html>
